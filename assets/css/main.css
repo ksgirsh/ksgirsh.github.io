@@ -3874,7 +3874,7 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		background-image: url("images/map.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -3907,3 +3907,25 @@ input, select, textarea {
 			}
 
 		}
+
+	.site-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 16px 24px;
+		background-color: #ffffff;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	.site-name {
+		margin: 0;
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+
+	.profile-pic {
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
