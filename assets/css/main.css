@@ -3975,3 +3975,53 @@ input, select, textarea {
 		color: white;
 	}
 
+	/* Hero container */
+	.hero-container {
+		position: relative;
+		width: 100%;
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+
+	/* Main background image */
+	.hero-bg {
+		width: 100%;
+		display: block;
+		border-radius: 10px;
+	}
+
+	/* Shared styles for floating images */
+	.hero-link {
+		position: absolute;
+		width: 150px;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+		.hero-link img {
+			width: 100%;
+			border-radius: 8px;
+			display: block;
+		}
+
+		/* Hover effect */
+		.hero-link:hover {
+			transform: scale(1.08);
+			box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+		}
+
+	/* Individual positioning */
+	.link1 {
+		top: 20%;
+		left: 15%;
+	}
+
+	.link2 {
+		top: 40%;
+		right: 20%;
+	}
+
+	.link3 {
+		bottom: 15%;
+		left: 40%;
+	}
+
