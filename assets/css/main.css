@@ -3929,3 +3929,21 @@ input, select, textarea {
 		border-radius: 50%;
 		object-fit: cover;
 	}
+
+
+	/* Row holding images */
+	.image-row {
+		display: flex;
+		gap: 60px;
+	}
+
+	/* Fake image boxes */
+	.img-box {
+		width: 220px;
+		height: 220px;
+		background: #ddd;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 20px;
+	}
