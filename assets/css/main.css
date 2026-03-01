@@ -3975,11 +3975,3 @@ input, select, textarea {
 		color: white;
 	}
 
-	/* Optional: dark overlay for readability */
-	.hero-image::after {
-		content: "";
-		position: absolute;
-		inset: 0;
-		background: rgba(0,0,0,0.4);
-		border-radius: 10px;
-	}
