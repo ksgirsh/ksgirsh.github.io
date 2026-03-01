@@ -3953,7 +3953,7 @@ input, select, textarea {
 	.hero-image {
 		position: relative;
 		background: url("images/map.jpg") center/cover no-repeat;
-		height: 500px;
+		height: 1000px;
 		padding: 3rem;
 	}
 
