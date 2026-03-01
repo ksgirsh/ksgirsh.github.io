@@ -3948,3 +3948,38 @@ input, select, textarea {
 		align-items: center;
 		font-size: 20px;
 	}
+
+	/* Hero Image Container */
+	.hero-image {
+		position: relative;
+		background: url("images/map.jpg") center/cover no-repeat;
+		height: 500px;
+		padding: 3rem;
+	}
+
+		/* The Image */
+		.hero-image img {
+			width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 10px; /* optional */
+		}
+
+	/* Content on top of image */
+	.hero-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		color: white;
+	}
+
+	/* Optional: dark overlay for readability */
+	.hero-image::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: rgba(0,0,0,0.4);
+		border-radius: 10px;
+	}
