@@ -3523,7 +3523,7 @@ input, select, textarea {
 /* Sidebar */
 
 	#sidebar {
-		padding: 2.5em 1.5em 0.5em 1.8em ;
+		padding: 2.5em 1.5em 0.5em 1em ;
 		background: #312450;
 		cursor: default;
 		height: 100vh;
