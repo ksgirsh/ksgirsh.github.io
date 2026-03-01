@@ -3935,7 +3935,7 @@ input, select, textarea {
 	.image-row {
 		display: flex;
 		gap: 60px;
-		padding-left: 2em;
+		padding: 60px;
 	}
 
 	/* Fake image boxes */
