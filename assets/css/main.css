@@ -3960,7 +3960,7 @@ input, select, textarea {
 		/* The Image */
 		.hero-image img {
 			width: 100%;
-			height: auto;
+			height: 100%;
 			display: block;
 			border-radius: 10px; /* optional */
 		}
