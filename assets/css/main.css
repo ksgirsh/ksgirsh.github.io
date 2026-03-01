@@ -3979,7 +3979,7 @@ input, select, textarea {
 	.hero-container {
 		position: relative;
 		width: 100%;
-		max-width: 1100px;
+		max-width: 5100px;
 		margin: 0 auto;
 	}
 
@@ -3988,6 +3988,7 @@ input, select, textarea {
 		width: 100%;
 		display: block;
 		border-radius: 10px;
+		background: url("images/map.jpg") center/cover no-repeat;
 	}
 
 	/* Shared styles for floating images */
