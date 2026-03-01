@@ -3533,7 +3533,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 4.5em;
+		width: 6em;
 		z-index: 10000;
 	}
 
