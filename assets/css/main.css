@@ -3465,7 +3465,7 @@ input, select, textarea {
 /* Wrapper (main) */
 
 	#sidebar + #wrapper {
-		margin-left: 13em;
+		margin-left: 11em;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3492,7 +3492,7 @@ input, select, textarea {
 /* Footer */
 
 	#sidebar + #wrapper + #footer {
-		margin-left: 19em;
+		margin-left: 11em;
 	}
 
 		@media screen and (max-width: 1280px) {
