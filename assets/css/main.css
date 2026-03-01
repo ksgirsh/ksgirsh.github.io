@@ -3581,7 +3581,7 @@ input, select, textarea {
 				-webkit-transition: opacity 0.15s ease, -webkit-transform 0.75s ease;
 				-ms-transition: opacity 0.15s ease, -ms-transform 0.75s ease;
 				transition: opacity 0.15s ease, transform 0.75s ease;
-				margin: 2.5em 0 0 0;
+				margin: 1.5em 0 0 0;
 				opacity: 1;
 				padding: 0;
 				position: relative;
