@@ -3948,6 +3948,11 @@ input, select, textarea {
 		align-items: center;
 		font-size: 20px;
 	}
+		/* The Image */
+		.img-box img {
+			width: 100%;
+			height: 100%;
+		}
 
 	/* Hero Image Container */
 	.hero-image {
@@ -3996,12 +4001,15 @@ input, select, textarea {
 		position: absolute;
 		width: 150px;
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		border-radius: 50%;
+		overflow: hidden;
 	}
 
 		.hero-link img {
 			width: 100%;
 			border-radius: 8px;
 			display: block;
+			border: 3px solid white;
 		}
 
 		/* Hover effect */
