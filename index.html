@@ -1,219 +1,64 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+﻿<!DOCTYPE html>
+<!-- HTML 5 ^^ -->
 <html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 
-	
-
-	<head>
-		<title>Maazan</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-
-	<body class="is-preload">
-
-		<section class="site-header">
-			<h1 class="site-name">Your N Maazan</h1>
-		</section>
-		<!-- Sidebar -->
-		<section id="sidebar">
-			<div class="inner">
-				<nav>
-					<ul>
-						<li><a href="#intro">Map</a></li>
-						<li><a href="#one">Groups</a></li>
-						<li><a href="#two">About Us</a></li>
-						<li><a href="#three">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</section>
-
-		<!-- Wrapper -->
-		<div id="wrapper">
-
-			<!-- Intro -->
-			<section id="intro" class="wrapper style1 fullscreen fade-up">
-				<div class="inner">
-
-					
-
-					<div class="hero-container">
-
-						<div class="hero-image">
-							<img src="images/map.jpg" alt="Map">
+    <title>Random Homestuck</title>
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
 
-						</div>
+</head>
+<body>
+    <div class="top-part">
+        <div>
+            <header style="background-color:springgreen" class="title-page">
+                <div class="title-child">
+                    <h1 style="color:black;">Welcome to Bingo!</h1>
 
-						<!-- Clickable Image 1 -->
-						<a href="generic.html" class="hero-link link1">
-							<img src="images/profile.png" alt="">
-						</a>
+                </div>
 
-						<!-- Clickable Image 2 -->
-						<a href="volun2.html" class="hero-link link2">
-							<img src="images/profile.png" alt="">
-						</a>
+            </header>
+        </div>
 
-						<!-- Clickable Image 3 -->
-						<a href="volun3.html" class="hero-link link3">
-							<img src="images/profile.png" alt="">
-						</a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Random</a></li>
+                <li><a href="bingo.html">Bingo</a></li>
+                <li><a href="about.html">About</a></li>
+                <li style="float: right"><a class="navTimerDisplay" style="text-align: right;">Timer disabled.</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </div>
 
-					</div>
 
-				</div>
-			</section>
+    <div id="player"></div>
+    <hr>
+    <div class="content">
 
-			<!-- One -->
-			<section id="one" class="wrapper style2 spotlights">
-				<section>
+        <div class="randomDiv">
+            <button onclick="getRandomVideoAtRandomTime()" class="randomBtn">Load random video</button>
+        </div>
+        
+        <br>
+        <div class="timerDiv">
+            <label id="timerLabel">Timer: <input type="number" id="timer" placeholder="x seconds"></label>
+            <button onclick="toggleTimer()" class="disabled" id="timerBtn">Toggle Timer</button>
+            <br>
 
-					<div class="image-row">
-						<a class="img-box" href="#two"> <img src="images/mechgroup.png" alt=""> </a>
-						<a class="img-box" href="#two"> <img src="images/swimgroup.png" alt=""> </a>
-						<a class="img-box" href="#two"> <img src="images/artgroup.png" alt=""> </a>
-					</div>
+            <h1 id="timerDisplay" style="text-align: center; font-weight:lighter">Timer disabled.</h1>
+            <br>
+        </div>
+            
+    </div>
 
-				</section>
-
-			</section>
-
-			<!-- Two -->
-			<section id="two" class="wrapper style3 fade-up">
-				<div class="inner">
-					<h2>About Us</h2>
-					<p>Maazan is a website designed to help volunteers and organizations.</p>
-					<div class="features">
-						<section>
-							<span class="icon solid major fa-link"></span>
-
-							<h3>Group Management</h3>
-							<p>Are you in a club or group of some sort? Great! Maazan has specific tools for group management to make group volunteering sublime.</p>
-						</section>
-						<section>
-							<span class="icon solid major fa-globe"></span>
-
-							<h3>Geographical Search</h3>
-							<p>Maazan works hard to show you specific detail about the volunteering opportunities right outside your door.</p>
-						</section>
-						<section>
-							<span class="icon solid major fa-smile"></span>
-
-							<h3>Easy Sign-Up</h3>
-							<p>Maazan makes volunteering as easy as clicking a button. Try it!</p>
-
-						</section>
-						<section>
-							<span class="icon solid major fa-dollar-sign"></span>
-
-							<h3>Free Service</h3>
-							<p>Not interested in paying money? No worries! Maazan has completely free and convenient options for you.</p>
-
-						</section>
-						<!--
-		<section>
-		<span class="icon solid major fa-desktop"></span>
-
-		<h3>Veroeros quis lorem</h3>
-		<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-	</section>
-	<section>
-		<span class="icon solid major fa-link"></span>
-
-		<h3>Urna quis bibendum</h3>
-		<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-	</section>
-	<section>
-		<span class="icon major fa-gem"></span>
-		<h3>Aliquam urna dapibus</h3>
-		<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-	</section>
-	-->
-					</div>
-				</div>
-			</section>
-
-			<!-- Three -->
-			<section id="three" class="wrapper style1 fade-up">
-				<div class="inner">
-					<h2>Get in touch</h2>
-					<p>If you have any questions about operations at Maazan, do not hesitate to ask! We would love to hear from you.</p>
-					<div class="split style1">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="5"></textarea>
-									</div>
-								</div>
-
-							</form>
-						</section>
-						<section>
-							<ul class="contact">
-
-								<li>
-									<h3>Email</h3>
-									<a href="#">maazan@business.org</a>
-								</li>
-								<li>
-									<h3>Phone</h3>
-									<span>(230) 319-9675</span>
-								</li>
-								<li>
-									<h3>Social</h3>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</section>
-					</div>
-				</div>
-			</section>
-
-		</div>
-
-		<!-- Footer -->
-		<footer id="footer" class="wrapper style1-alt">
-			<div class="inner">
-				<ul class="menu">
-					<li>&copy; Maazan. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-	</body>
+   <script src="index.js"></script>
+</body>
 </html>

@@ -1,0 +1,170 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: url(images/amongusBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title-page {
+    border-style: solid;
+    border-width: 3px;
+    border-color: blue;
+}
+
+.title-page .title-child
+{
+    padding: 10px;
+
+}
+.title-child{
+    margin-left: 5px;
+    font-style: italic;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: blue;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover:not(.navTimerDisplay) {
+    background-color: darkblue;
+}
+
+.navbar li{
+    float: left;
+}
+
+.navTimerDisplay {
+    margin-right: 25px;
+    font-weight: bolder;
+}
+
+
+/* INDEX.HTML */
+.timerDiv {
+    margin-top: 50px;
+}
+
+.randomDiv{
+    margin-top: 50px;
+}
+
+.enabled{
+    background-color: rgb(128, 255, 128);
+    color:black;
+}
+.disabled{
+    background-color: rgb(231, 99, 99); 
+    color:white;
+}
+
+.enabled:hover{
+    background-color: rgb(189, 255, 189);
+    
+}
+.disabled:hover{
+    background-color: rgb(255, 141, 141); 
+}
+
+.enabled:active{
+    background-color: rgb(230, 255, 230);
+    
+}
+.disabled:active{
+    background-color: rgb(255, 228, 228); 
+}
+
+.top-part{
+    flex-direction: row;
+    align-items: stretch;
+    display: block;
+}
+
+.content {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.randomBtn {
+    font-weight: bold;
+    padding: 30px;
+    font-size: 3em;
+    transition: 0.2s;
+    background-color: var(--base-color, rgb(201, 201, 201)); /* defaults to white */
+}
+
+.randomBtn:hover {
+    font-size: 3.05em;
+    background-color: var(--hover-color, rgb(255, 255, 255)); /* defaults to white */
+}
+
+#timerBtn {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+
+    border-color: hsl(0, 0%, 83%);
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+
+    transition: 0.25s;
+}
+
+#timer {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 300px;
+}
+
+#timerLabel {
+    font-style: italic;
+    font-size: 4em;
+}
+
+/* BINGO.HTML */
+
+.bingoBoard {
+    background-color: gray;
+    width: 1080px;
+    height: 1080px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+}
+
+.bingoButton {
+    padding: 10px;
+    font-size: 2em;
+    background-color: tomato;
+    font-weight: bold;
+}
+
+/* ABOUT.HTML */
+
+.about {
+    margin-top: 200px;
+}
