@@ -1,13 +1,61 @@
 body {
-    background-color: rgb(0, 0, 0);
+    
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-
-    background-image: url(images/amongusBG.png);
+    background-image: url(images/thornzonebg.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+
+h1 {
+    font-family: 'Jersey 25', 'Verdana', 'Arial', sans-serif;
+    font-size: 3em;
+}
+
+
+h2 {
+    font-family: 'Lucida Console', 'Courier New', serif;
+    font-size: 2em;
+    font-style: italic;
+    border-bottom: 2px solid blue;
+    border-radius: 50px;
+}
+
+a {
+    margin: 10px;
+    font-family: 'Geist Pixel';
+    color: aqua;
+}
+a:visited {
+    color: lime;
+}
+.borderless {
+    border: none;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Geist Pixel';
+}
+
+img {
+    border: 5px solid greenyellow;
+    border-radius: 2px;
+}
+.dark {
+    color: wheat;
+    border-bottom: 2px solid white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 0 -4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.bright {
+    color: black;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5), -2px -2px 4px rgba(0, 255, 0, 0.5);
+    box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.5), 0 -4px 8px rgba(0, 255, 0, 0.5);
 }
 
 .title-page {
@@ -19,11 +67,97 @@ body {
 .title-page .title-child
 {
     padding: 10px;
-
+    margin-left: 26px;
 }
-.title-child{
-    margin-left: 5px;
-    font-style: italic;
+
+.box {
+    background-color: aqua;
+    border: 8px solid;
+    padding: 25px;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    color: black;
+    box-sizing: border-box;
+    border-color: white;
+    border-radius: 20px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#aqua {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+.pagination{
+    text-align: center;
+}
+
+.pagination a{
+    text-align: center;
+
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.pagination a.active{
+    color: white;
+    background-color: darkolivegreen;
+    font-weight: bold;
+    border-radius: 5px;
+}
+    
+.pagination a:hover:not(.active){
+    background-color: darkblue;
+    border-radius: 5px;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: darkblue;
+    color: aqua;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown:hover button{
+    background-color: blue;
+    color: white;
+}
+
+.dropdown a {
+    display: block;
+    background-color: navajowhite;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: blue;
+}
+.dropdown .dropdown-content {
+    background-color: navajowhite;
+    display: none;
+    position: absolute;
+    padding: 10px 15px;
+    min-width: 160px;
+    box-shadow: 4px 4px 8px 0px rgba(255,255,255,0.4);
+}
+
+.dropdown:hover .dropdown-content a:hover {
+    background-color: white;
+    color: blue;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .navbar ul {
@@ -39,132 +173,49 @@ body {
     padding: 15px;
     display: block;
     text-align: center;
+    transition: 0.25s;
 }
-
-.navbar a:hover:not(.navTimerDisplay) {
+.navbar a:hover {
+    transition: 0.25s;
     background-color: darkblue;
 }
 
-.navbar li{
+.navbar li {
     float: left;
 }
 
-.navTimerDisplay {
-    margin-right: 25px;
-    font-weight: bolder;
+aside {
+    width: 20%;
+    float: left;
+    padding: 10px;
 }
 
-
-/* INDEX.HTML */
-.timerDiv {
-    margin-top: 50px;
+.bigone {
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 
-.randomDiv{
-    margin-top: 50px;
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%)
+    }
 }
 
-.enabled{
-    background-color: rgb(128, 255, 128);
-    color:black;
-}
-.disabled{
-    background-color: rgb(231, 99, 99); 
-    color:white;
-}
-
-.enabled:hover{
-    background-color: rgb(189, 255, 189);
+.links a {
+    padding-left: 2em;
+   
     
 }
-.disabled:hover{
-    background-color: rgb(255, 141, 141); 
+
+.links {
+    background-color: rgba(188, 141, 197, 0.178);
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 26px;
 }
 
-.enabled:active{
-    background-color: rgb(230, 255, 230);
-    
-}
-.disabled:active{
-    background-color: rgb(255, 228, 228); 
-}
-
-.top-part{
-    flex-direction: row;
-    align-items: stretch;
-    display: block;
-}
-
-.content {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin: 0px;
-    flex-direction: column;
-    align-items: center;
-}
-
-.randomBtn {
-    font-weight: bold;
-    padding: 30px;
-    font-size: 3em;
-    transition: 0.2s;
-    background-color: var(--base-color, rgb(201, 201, 201)); /* defaults to white */
-}
-
-.randomBtn:hover {
-    font-size: 3.05em;
-    background-color: var(--hover-color, rgb(255, 255, 255)); /* defaults to white */
-}
-
-#timerBtn {
-    padding: 10px 20px;
-    font-weight: bold;
-    font-size: 2rem;
-
-    border-color: hsl(0, 0%, 83%);
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 25px;
-    cursor: pointer;
-    margin-left: 10px;
-
-    transition: 0.25s;
-}
-
-#timer {
-    padding: 10px;
-    font-size: 2rem;
-    font-weight: bold;
-    border: 2px solid white;
-    border-radius: 10px;
-    width: 300px;
-}
-
-#timerLabel {
-    font-style: italic;
-    font-size: 4em;
-}
-
-/* BINGO.HTML */
-
-.bingoBoard {
-    background-color: gray;
-    width: 1080px;
-    height: 1080px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr)
-}
-
-.bingoButton {
-    padding: 10px;
-    font-size: 2em;
-    background-color: tomato;
-    font-weight: bold;
-}
-
-/* ABOUT.HTML */
-
-.about {
-    margin-top: 200px;
+.links li {
+    color:rgba(255, 255, 255, 0.233);
+    margin-top: 2em;
 }

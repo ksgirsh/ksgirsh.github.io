@@ -1,64 +1,56 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!-- HTML 5 ^^ -->
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-
-    <title>Random Homestuck</title>
-    <link rel="icon" href="favicon.png" />
+    <title>THORNZONE</title>
+    <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="style.css" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Figtree:ital,wght@0,300..900;1,300..900&family=Geist+Pixel&family=Jersey+25&display=swap" rel="stylesheet">
 
 </head>
-<body>
-    <div class="top-part">
-        <div>
-            <header style="background-color:springgreen" class="title-page">
-                <div class="title-child">
-                    <h1 style="color:black;">Welcome to Bingo!</h1>
+<body style="background-color:black">
+    <div>
+        <div class="bigone">
+            <div>
+                <header style="background-color:springgreen" class="title-page">
+                    <div class="title-child">
+                        <h1 style="color:black;">THORNZONE :// welcome!</h1>
+                        
+                    </div>
+    
+                </header>
+            </div>
+    
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">My Games</a></li>
+                    <li><a href="nexus.html">Game Links</a></li>
+                </ul>
+            </nav>
 
-                </div>
-
-            </header>
         </div>
-
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Random</a></li>
-                <li><a href="bingo.html">Bingo</a></li>
-                <li><a href="about.html">About</a></li>
-                <li style="float: right"><a class="navTimerDisplay" style="text-align: right;">Timer disabled.</a></li>
-            </ul>
-        </nav>
         <hr>
-    </div>
-
-
-    <div id="player"></div>
-    <hr>
-    <div class="content">
-
-        <div class="randomDiv">
-            <button onclick="getRandomVideoAtRandomTime()" class="randomBtn">Load random video</button>
-        </div>
         
         <br>
-        <div class="timerDiv">
-            <label id="timerLabel">Timer: <input type="number" id="timer" placeholder="x seconds"></label>
-            <button onclick="toggleTimer()" class="disabled" id="timerBtn">Toggle Timer</button>
-            <br>
-
-            <h1 id="timerDisplay" style="text-align: center; font-weight:lighter">Timer disabled.</h1>
-            <br>
-        </div>
-            
+        
+        <p style="font-style: italic;">These are all games curated and created by me, the owner of this website! I hope you're able to derive at least a little enjoyment from them; I'm still in the process of making them compatible with all devices, so some games might break.</p>
+        <br>
+        <a href="apogeegame/apogee.html">
+            <img src="images/apogeethumb.png" alt="Link to apogee" width="500px" height="500px">
+        </a>     
+        <a href="monkeycoingame/mcg.html">
+            <img src="images/mcgThumbnail.png" alt="Link to monkey coin game" width="500px" height="500px">
+        </a>
+        <a href="sentinelGame/sentinel.html">
+            <img src="images/sentinelThumb.png" alt="Link to boss fight" width="500px" height="500px">
+        </a>
+        <br>
+        <p style="font-style: italic;">Currently there are: 3 games</p>
+        <hr>
     </div>
-
-   <script src="index.js"></script>
 </body>
 </html>
