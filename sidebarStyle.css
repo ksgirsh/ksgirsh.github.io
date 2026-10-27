@@ -175,6 +175,9 @@ body {
     animation-name: sidebarOpen;
     border: 5px solid darkgreen;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .sidebar a {
     padding: 6px 8px 6px 16px;
@@ -192,6 +195,12 @@ body {
     background-color: rgb(255, 255, 255);
     font-size:28px;
     transition: 0.25s;
+}
+
+.sidebar .bottom {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 50px;
 }
 .container {
     align-items: center;
@@ -213,10 +222,9 @@ body {
     gap: 20px;
     max-width: 800px;
     margin: 0 auto;
+    margin-left: 4px;
 }
-.imgContainer h1 {
-    top: 0;
-}
+
 .textContainer {
     flex: 1;
 }
