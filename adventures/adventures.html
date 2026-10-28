@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- HTML 5 ^^ -->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>THORNZONE</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="../sidebarStyle.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Figtree:ital,wght@0,300..900;1,300..900&family=Geist+Pixel&family=Jersey+25&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="link">
+            <a href="#cat">Catenary</a>
+            <hr style="width:25%">
+            <br>
+        </div>
+        <div class="link">
+            <a href="#ring">Shader</a>
+            <hr style="width:25%">
+            <br>
+        </div>
+        <div class="link">
+            <a href="#bezier">Bezier</a>
+            <hr style="width:25%">
+            <br>
+        </div>
+        <div class="link">
+            <a href="#smoke">Smoke</a>
+            <hr style="width:25%">
+            <br>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>CODING ADVENTURES</h1>
+        <h3> this page talks about fun learning experiences/mini projects I've had while coding.
+        </h3>
+        <br><br><br>
+        <hr>
+        <div id="cat">
+            <h2>Catenary</h2>
+                <div style="margin-top: 5em;" class="imgContainer">   
+                    <img src="catCard.png" style=" width: 500px; height: auto;" class="sideImg">
+                    <div class="textContainer">
+                        <h1>Catenary Curve</h1>
+                        <p>Image from Wikipedia</p>
+                    </div>
+                </div> 
+            
+            <p>I wanted to put ziplines in Steelsmoke, because I thought that would be cool. So naturally I decided to invest tons and tons of effort into learning and engineering such a thing. </p>
+            <p><a href="https://www.alanzucconi.com/2020/12/13/catenary-2/" style="color:aqua">Alan Zucci wrote an amazing article</a>on the catenary curve, which I followed while trying to render it.</p>
+            <p>Additionally, I watched<a style="color:aqua">a video</a>on the derivation of the catenary curve, which helped me understand the more complex mathematics behind it.</p>
+            <p>First I had to understand the raw calculus, then I had to parameterize the catenary curve between two points, which was VERY confusing. But fun!</p>
+            <img src="catCode.png" style="width: 900px; height: auto;">
+            <p>Sneek peek of some of the code involved.</p>
+            <br>
+            <hr>
+            <br>
+            <img src="catResult.png" style="width: 900px; height: auto;">
+            <p>Final result! Looks great!</p>
+            <p>There is an ongoing issue of the catenary being offset on the y-axis by a large amount, but I have a working band-aid fix in place. It's nothing wrong with the base math itself. Just my own silly mistakes.</p>
+            <br>
+            <hr>
+        </div>
+        <div id="ring">
+            <h2>Ring Shader</h2>
+                <div style="margin-top: 5em;" class="imgContainer">   
+                    <img src="shaderCard.png" style=" width: 500px; height: auto;" class="sideImg">
+                    <div class="textContainer">
+                        <h1>Ring Shader</h1>
+                    </div>
+                </div> 
+            
+            <p>The UI in steelsmoke covered up too much of the screen. In a game which places so much emphasis on the world and exploring, you need to be able to see!</p>
+            <p>So I devised a plan for the UI-- specifically, a specific ring to represent your health. Instead of massive health bars, you would just see a tiny circle!</p>
+            <p>I wanted to minimize animation/art files so I opted for the math method instead-- programming a healthbar! I had tangoed with shader programming before, but this was entirely new.</p>
+            <p>Before now I hadn't worked with polar stuff that much. Moreover, a lot of shader code is interpolation and bare math. I followed<a style="color:aqua">Freya Holmer's Shader Lectures</a>as well as<a style="color:aqua">a tutorial for simple shaders.</a>
+            </p>
+            <br>
+            <hr>
+            <video width="960" height="540" controls>
+                <source src="ringshader.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p style="font-size: 22x;">Ring Demo.</p>
+            <br>
+            <hr>
+            <br>
+            <p>I won't outline all of my code, because some stuff is just too complicated, and other people explain it better. I dont want to be misleading.</p>
+            <div style="margin-top: 3em;" class="imgContainer">   
+                <img src="ringCode.png" style=" width: 650px; height: auto;" class="sideImg">
+                <div class="textContainer" style="width: 500px;">
+                    <h1>Ring Code</h1>
+                    <p>1. First you draw the edge of a circle.</p>
+                    <p>2. Along the edge, select a region to fill in-- this region is your thickness!</p>
+                    <p>3. Cut the ring at a certain angle depending on your health.</p>
+                </div>
+            </div> 
+            <br>
+            <hr>
+        </div>
+        <div id="bezier">
+            <h2>Bezier Curves</h2>
+            <div style="margin-top: 5em;" class="imgContainer">   
+                <img src="bezCard.png" style=" width: 500px; height: auto;" class="sideImg">
+                <div class="textContainer">
+                    <h1>Cubic Bezier Curve</h1>
+                    <p>Credit to Freya Holmer.</p>
+                </div>
+            </div> 
+            <p>Making smooth curves is nice and useful. For my purposes, I just wanted some cute decoration in steelsmoke-- wires that dont involve weird catenaries. Visually speaking, a cubic bezier curve and catenary curve look very similar.</p>
+            <p>I primarily learned from Freya Holmer's<a href="https://www.youtube.com/watch?v=aVwxzDHniEw&t" style="color: aqua;">Beauty of Bezier Curves</a>video. Then after learning the math, I simply wrote the code and that was that!</p>
+            <p>I am very proud of this coding project; it is very smooth and I used very little tutorials. Freya Holmer's documentary was all mathematical and involved zero code, meaning everything here came from my brain!!!.</p>
+            <br>
+            <hr>
+            <br>
+            <video width="960" height="540" controls>
+                <source src="bezCurve.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br>
+            <hr>
+            <br>
+            <p>Also it's just very nice to look at. I was able to animate these Bezier Curves by moving the control points with sine/cosine modulation.</p>
+            <video width="960" height="540" controls>
+                <source src="bezAnimate.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br>
+            <hr>
+            <br>
+            <div style="margin-top: 3em;" class="imgContainer">   
+                <img src="bezCode.png" style=" width: 650px; height: auto;" class="sideImg">
+                <div class="textContainer" style="width: 500px;">
+                    <h1>Bezier Code</h1>
+                    <p>Implementation of De Castelijau's Algorithm.</p>
+                    <p>Interpolate until you run out things to interpolate!</p>
+                </div>
+            </div>
+            <br> 
+            <p>I dont often use nested for loops in my code; this was very challenging and very rewarding. Considering this was without coding tutorials, it might be the best code I've done so far.</p>
+            <br>
+            <hr>
+            <br>
+        </div>
+        <div id="smoke">
+            <h2>Smoke Simulator</h2>
+            <div style="margin-top: 5em;" class="imgContainer">   
+                <img src="smokeSimCard.png" style=" width: 500px; height: auto;" class="sideImg">
+                <div class="textContainer">
+                    <h1>Navier Stokes Sim.</h1>
+                    <p>Credit to Sebastian Lague.</p>
+                </div>
+            </div> 
+            <br>
+            <hr>
+            <br>
+            <p>I'll just start off with the showcase:</p>
+            <video width="960" height="540" controls>
+                <source src="smokeSim.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br>
+            <hr>
+            <p>I made this simulator with some tutorials,<a href="https://graphicscomputing.fr/course/2024_2025/epita_ani3d/practice/content/05_fluids/a_stable_fluids/assets/stable_fluids.pdf" style="color: aqua;">Jos Stam's Stable Fluids Paper</a>, and Sebastian Lague's<a href="https://www.youtube.com/watch?v=Q78wvrQ9xsU&t" style="color:aqua">Smoke Simulator</a>, where he breaks down Jos Stam's paper.</p>
+            <p>I also watched several videos breaking down the Navier Stokes equations in an attempt to understand them.</p>
+            <p>The way I remember it working is that you would simulate smoke along a grid, and move smoke particles throughout this grid whilst obeying the laws drawn by the Naiver-Stokes equations. This means the divergence of the fluid is zero, and the pressure and velocity are constant.</p>
+        </div>
+    </div>
+</body>
